@@ -1,0 +1,721 @@
+/* color: #4b208c */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    margin: 0 15px;
+    padding: 15px 0;
+    position: relative;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* page border
+/*------------------------------------------------------------------------------------------*/
+.page-border {
+    position: fixed;
+    pointer-events: none;
+    background: #f3f3ef;
+    width: 100%;
+    left: 0;
+}
+
+.page-border {
+    z-index: 999999;
+    pointer-events: none;
+    padding: 10px;
+}
+
+.page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
+    background: #f3f3ef;
+    position: fixed;
+    z-index: 9999;
+}
+
+.page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
+    padding: 11px;
+    background: #ccc;
+}
+
+.page-border .bottom-border, .page-border .top-border {
+    width: 100%;
+    padding: 10px;
+    left: 0;
+}
+
+.page-border .left-border, .page-border .right-border {
+    padding: 10px;
+    height: 100%;
+    top: 0;
+}
+
+.page-border .top-border {
+    top: 0;
+}
+
+.page-border .right-border {
+    right: 0;
+}
+
+.page-border .bottom-border {
+    bottom: 0;
+}
+
+.page-border .left-border {
+    left: 0;
+}
+
+/* layoit */
+.col-1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.col-2 {
+    /* width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute; */
+    /* padding: 0px 0px 90px 150px; */
+    /* align-items: center; */
+ }
+ 
+/*------------------------------------------------------------------------------------------*/
+/* 1. header   [1] */
+/*------------------------------------------------------------------------------------------*/
+
+/* containment [ parent 1 ] */
+.header-section {
+    width: 100%;
+    height: 80vh !important;
+    /* background-color: blanchedalmond; */
+}
+
+header ul {
+    text-align: center;
+}
+
+header li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+
+/* banner content information */
+.banner {
+    width: 100%;
+    height: 52vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    object-fit: cover; 
+    margin: 70px 0 0 0;
+}
+
+ /* info */
+.banner-content {
+    width: 600px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.banner-content p span {
+  color:#4b208c;
+}
+
+.banner .banner-content:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    /* margin-top: 30px; */
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* navigation bar
+/*------------------------------------------------------------------------------------------*/
+
+/* navigation [ parent 2 ] */
+.navbar-collpase {
+    font-size: 13px;
+    padding: 20px 0 0 0;
+}
+
+/* [parent 3] */
+.container-row {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+
+header ul a {
+    height: 71px;
+    line-height: 70px;
+    padding: 0px 20px 0 0px;
+    text-decoration: none;
+    color: black;
+      /* display: block; */
+}
+
+header nav a:hover {
+    opacity: 0.6;
+    color: #4b208c;
+}
+
+/* logo  */
+#logo {
+    margin: 10px 20px 0 0;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    background-color: #111;
+    border-radius: 6%;
+    display: flex;
+}
+
+#logo h4 {
+    color: #fff;
+    line-height: 35px;
+}
+
+/* social icons */
+#social-icons {
+    float: right;
+    text-align: right;
+}
+
+/* social icon */
+#social-icons img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* section title for sample project + softsore skills  */
+/*------------------------------------------------------------------------------------------*/
+
+.section-title {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 85%;
+}
+
+.section-title h2 {
+    color: #4b208c;
+    margin: 0 0 50px 0;
+    padding: 10px 0 0px 0;
+    /* border-radius: 20px; */
+    width: 55%;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* part two: Technical skill [ about page ]  [ a-bit of bootstrap ]  */
+/* -------------------------------------------------------------------------------------------- */
+
+/* parent 2 */
+#container {
+max-width: 1345px;
+justify-content: space-between;
+position: absolute;
+}
+
+#technical_skills {
+width: 100%;
+}
+
+#skills-info {
+height: 40vh;
+width: 45%;
+margin: 0 40px 0 0;
+}
+
+#skills-info p {
+color: #fff;
+font-size: 20px;
+width: 500px;
+text-align: left;
+}
+
+.section_text {
+width: 500px;
+height: auto;
+text-align: left;
+}
+
+.skill-detail {
+height: 150px;
+/* background-color: chartreuse; */
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* part three: Why hire me  [ about page ] [3]*/
+/*------------------------------------------------------------------------------------------*/
+
+  .sample-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .testimonial {
+    background-color: #fff;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 10px 5px 20px rgba(42, 40, 40, 0.1);
+    width: 290px;
+    height: 140px;
+  }
+
+  .testimonial p {
+    text-align: justify;
+  }
+
+  .section-title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+/*------------------------------------------------------------------------------------------*/
+/* about page */
+/*------------------------------------------------------------------------------------------*/
+.about-banner {
+    padding: 50px 0px 0px 220px;
+    margin: 40px 0 0px 0;
+    position: relative;
+    object-fit: cover;
+    width: 98%;
+  }
+
+  #about {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px 0px 40px;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .profile {
+    background-image: url("../images/model-animated.jpg");
+    background-position: 50% -20px;
+    background-size: 150% 150%;
+    background-repeat: no-repeat;
+    background-color: #111;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: absolute;
+    height: 470px;
+    width: 470px;
+    right: 200px;
+    top: 10%;
+  }
+
+  .about-banner h1 {
+    padding-top: 5%;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    color: #4b208c;
+ }
+
+ .about-banner p {
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 5px 10px;
+      font-size: 18px;
+      font-weight: 300;
+      color: #111; 
+    }
+    
+    #about-bg {
+      background-image: url("../images/banner/fly-869595_1920.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+/*------------------------------------------------------------------------------------------*/
+/* projects page */
+/*------------------------------------------------------------------------------------------*/
+
+.project-banner {
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    width: 100%;
+  }
+
+  #project-header-bg {
+    background-image: url("../images/banner/pexels-apasaric-build.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .p-banner-content {
+  width: 550px;
+  padding: 60px 30px 0px 30px;
+  margin: 30px 0 20px 0;
+  line-height: 25px;
+  text-align: center;
+ }
+
+ .p-banner-content h1 {
+    color: black;
+    padding-top: 5%;
+    font-size: 62px;
+    line-height: 60px;
+    font-weight: 800;
+  }
+
+  .p-banner-content p {
+    color: black;
+  }
+
+  #skills_section {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+   }
+
+/*------------------------------------------------------------------------------------------*/
+/* footer [ bootstrap ] */
+/*------------------------------------------------------------------------------------------*/
+
+.footer { 
+    width: 100%;
+    background-color: rgb(27, 27, 27); 
+    border-top: 30px solid rgba(225, 225, 225, 0.864);
+    font-weight: 500;
+    color: orange; 
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 200px;
+  }
+
+  .footer h4  {
+    color: rgba(128, 128, 128, 0.695);
+    font-weight: 500;
+  }
+
+  .footer p {
+    color: rgba(128, 128, 128, 0.695);
+  }
+
+/*------------------------------------------------------------------------------------------*/
+/* buttion */
+/*------------------------------------------------------------------------------------------*/
+
+.view-button {
+    width: 190px;
+    font-size: 16px;
+    padding: 11px 16px;
+    border-radius: 35px;
+    transition: all .3s linear;
+    background-color: #742ae3;
+    color: #ffffff;
+}
+
+.view-button:hover {
+    box-shadow: 0 0 5px rgb(252, 81, 147), 0 0 5px rgb(252, 81, 147), 0 0 0px rgb(252, 81, 147), 0 0 10px #03e9f4;
+  }
+
+
+/*------------------------------------------------------------------------------------------*/
+/* typography */
+/*------------------------------------------------------------------------------------------*/
+
+ h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    color: rgba(221, 64, 7, 0.931);
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 10px 0 10px 0;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.banner-content h4 span {
+    color: rgb(222, 26, 26);
+    text-transform: uppercase;
+}
+
+.banner-content h3 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h2 {
+    padding: 14px 0;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+    color:#4b208c;
+}
+
+h4 {
+    color: #111;
+    padding: 7px 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+    transition: opacity 0.3s ease-out;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #111; 
+
+}
+
+ul {
+    list-style: none;
+}
+
+/* Technical skills [2]*/
+.section_title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+    /* color: #ccc; */
+}
+
+/* sample project [3] */
+.sample-text h3 {
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sample-text p { 
+    font-family:sans-serif;
+    font-weight: 100;
+}
+
+.sample-text {
+  text-align: center;
+  background-color: #fff;
+}
+
+/* soft skills [4] */
+.testimonial {
+    font: 10px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* image */
+/*------------------------------------------------------------------------------------------*/
+
+/* homepage banner */
+#header-bg {
+    background-image: linear-gradient(rgba(114, 111, 111, 0), rgba(0, 0, 0, 0.664)), url("../images/banner/mountain-5795883_1920.jpg");
+    /* border-bottom: 30px solid rgb(204, 204, 204); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+}
+
+.banner-profile img {
+    width: 100%;
+    height: 43vh;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 10px 5px 20px rgba(42, 40, 40, 0.1);
+    z-index: 5; 
+}
+
+/* parent 1 [ technical ] [2] */
+#skills_section {
+    background-image: url("../images/banner/pexels-alexazabache-4007310.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    border-top: 30px solid #cccccce4;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    }
+
+/* why hire me [ soft skills ] [3] */
+#sample_blog_section {
+    border-top: 30px solid rgb(204, 204, 204);
+    background-image: url("../images/banner/pexels-alexazabache-4007310.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+ }
+
+ #soft-skills-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* for all [does not apply affect]  */
+.layout-padding {
+    padding: 30px 0 0 0 ;
+}
+
+/* tech skills [3] */
+#technical_skills {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+}
+
+#technical_skills img {
+    width: 60px;
+    margin: 0 8px 10px 0;
+}
+
+/* soft skills [4] */
+.testimonial img {
+    width: 70px; 
+    margin: 0 10px 10px 0;
+    padding: 10px 10px;
+    float: left;
+    shape-outside: inset(0 0 0 0);
+}
+
+/* preview * homepage preview */
+.card-img {
+    width: 100%;
+    height: 200px;
+}
+
+#card-img {
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* my story img */
+.jumbotron img {
+    width: 500px;
+    height: auto;
+    margin: 0 5px 0 0;
+}
+
+#sample img {
+    width: auto;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+#history img {
+    width: auto;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+#news img {
+    width: auto;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+#LHR img {
+    width: 300px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+#Sainsbury img {
+    width: 300px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+/* backgrounds */
+
+#wrapper {
+    /* background-image: url("../images/banner/pexels-pixabay-lightbulb.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* removed */
+#sample-project {
+    border-top: 30px solid #cccccce4;;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding: 25px 0;
+    min-height: 65vh;
+}

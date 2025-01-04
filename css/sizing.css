@@ -1,0 +1,34 @@
+
+/*------------------------------------------------------------------------------------------*/
+/* media queries */
+/*------------------------------------------------------------------------------------------*/
+
+@media (min-width: 360px) and (max-width: 791px) {
+    .banner, .col-1 {
+        /* display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        height: 250px; */
+    }
+
+    #header-bg, .footer {
+        /* min-width: 76vh;
+        display: flex; */
+    }
+
+    #sample, .testimonial {
+        /* width: 70vh;
+        padding: 0; */
+    }
+
+    #container {
+        /* height: auto;
+        width: 100%; */
+    }
+
+  }
+
+/* another */
+@media all and (max-width: ) {
+
+}
